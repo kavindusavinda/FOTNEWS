@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">fotnews</string>
+
+    <string name="hint_username">User name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm password</string>
+    <string name="signup">Sign Up</string>
+    <string name="login_prompt">Already have an account?<font color='#FF0000'> Log In</font></string>
+    <string name="logo_description">FOT Connect logo</string>
+    <string name="app_logo_desc">App logo</string>
+    <string name="app_name">FOT CONNECT</string>
+    <string name="btn_login">Login</string>
+    <string name="signup_prompt">Don’t have an account? <font color='#FF0000'>Sign up</font></string>
+    <string name="btn_login_description">Login to your account</string>
+
+
 </resources>
