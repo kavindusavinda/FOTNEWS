@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fotnews">
         <activity
+            android:name=".PostNewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignOutDialog"
+            android:exported="false" />
+        <activity
             android:name=".EditUserDialog"
             android:exported="false" />
         <activity

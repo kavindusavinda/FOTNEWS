@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!-- Row with hamburger and FOT NEWS title -->
+        <!-- Top Bar with hamburger and title -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
 
             <TextView
                 android:id="@+id/newsHeader"
-                android:text="           FOT NEWS"
+                android:text="             FOT NEWS"
                 android:textSize="26sp"
                 android:textStyle="bold"
                 android:textColor="#FC4040"
@@ -39,9 +39,9 @@
                 android:layout_height="wrap_content" />
         </LinearLayout>
 
-        <!-- News List -->
+        <!-- News RecyclerView -->
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewNews"
+            android:id="@+id/newsRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
@@ -53,42 +53,48 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:padding="8dp"
-            android:background="#70B3FB">
+            android:padding="16dp"
+            android:weightSum="3">
 
             <ImageButton
                 android:id="@+id/btnSport"
-                android:layout_width="60dp"
+                android:layout_width="1dp"
                 android:layout_height="60dp"
-                android:layout_margin="4dp"
-                android:background="@drawable/round_button_background"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
                 android:src="@drawable/sport_logo"
+                android:background="@drawable/round_button_background"
                 android:scaleType="centerInside"
-                android:padding="10dp" />
+                android:adjustViewBounds="true"
+                android:contentDescription="Sport" />
 
             <ImageButton
                 android:id="@+id/btnEvent"
-                android:layout_width="60dp"
+                android:layout_width="1dp"
                 android:layout_height="60dp"
-                android:layout_margin="4dp"
-                android:layout_marginStart="10dp"
-                android:background="@drawable/round_button_background"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp"
                 android:src="@drawable/event_logo"
+                android:background="@drawable/round_button_background"
                 android:scaleType="centerInside"
-                android:padding="10dp" />
+                android:adjustViewBounds="true"
+                android:contentDescription="Event" />
 
             <ImageButton
                 android:id="@+id/btnAcademic"
-                android:layout_width="60dp"
+                android:layout_width="1dp"
                 android:layout_height="60dp"
-                android:layout_margin="4dp"
-                android:layout_marginStart="10dp"
-                android:background="@drawable/round_button_background"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
                 android:src="@drawable/academic_logo"
+                android:background="@drawable/round_button_background"
                 android:scaleType="centerInside"
-                android:padding="10dp" />
+                android:adjustViewBounds="true"
+                android:contentDescription="Academic" />
         </LinearLayout>
+
     </LinearLayout>
+
 
     <!-- Navigation Drawer -->
     <com.google.android.material.navigation.NavigationView
